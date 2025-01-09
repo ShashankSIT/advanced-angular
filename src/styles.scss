@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Apply to the whole application */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-y: scroll;
+    /* Ensures scrollbar is always visible */
+}
+
+/* Custom scrollbar for the entire application */
+::-webkit-scrollbar {
+    width: 10px;
+    /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    /* Track color */
+    border-radius: 10px;
+    /* Rounded corners for the track */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #263238;
+    /* Thumb color */
+    border-radius: 10px;
+    /* Rounded corners for the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3d5059;
+    /* Darker color when hovered */
+}
+
+/* Optional: Hide the scrollbar but allow scrolling */
+.hide-scrollbar {
+    scrollbar-width: none;
+    /* For Firefox */
+    -ms-overflow-style: none;
+    /* For Internet Explorer and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Opera */
+}

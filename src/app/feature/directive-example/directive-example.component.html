@@ -1,0 +1,18 @@
+<div class="body">
+  <!-- <h2
+    [ngStyle]="{ color: count % 5 === 0 && isClicked ? '#57a957' : '#d21d1d' }"
+    (click)="onClick()"
+  >
+    {{ count }}
+  </h2> -->
+  <h2 appExampleHighlight [number]="count" [divisible]="5">
+    {{ count }}
+  </h2>
+  <br />
+  <div class="button-container">
+    <button (click)="increaseCount()" class="btn btn-success">+</button>
+    <button (click)="decreaseCount()" class="btn btn-danger">-</button>
+  </div>
+</div>
+
+<!-- #57a957, #d21d1d -->
