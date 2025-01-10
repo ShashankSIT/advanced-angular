@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
-import { ExampleHighlightDirective } from '../../core/directives/example-highlight.directive';
+import { ExampleHighlightDirective } from '../../shared/directives/example-highlight.directive';
 
 @Component({
   selector: 'app-directive-example',

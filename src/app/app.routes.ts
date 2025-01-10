@@ -6,9 +6,9 @@ import { RoutingHomeComponent } from './feature/routing/routing-home/routing-hom
 import { RoutingAboutComponent } from './feature/routing/routing-about/routing-about.component';
 import { RoutingAboutEditComponent } from './feature/routing/routing-about-edit/routing-about-edit.component';
 import { RoutingAccessDenidedComponent } from './feature/routing/routing-access-denided/routing-access-denided.component';
-import { authGuard } from './core/guards/auth.guard';
-import { authChildGuard } from './core/guards/auth-child.guard';
-import { authDeactivateGuard } from './core/guards/auth-deactivate.guard';
+import { authGuard } from './shared/guards/auth.guard';
+import { authChildGuard } from './shared/guards/auth-child.guard';
+import { authDeactivateGuard } from './shared/guards/auth-deactivate.guard';
 
 export const routes: Routes = [
   {
