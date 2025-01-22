@@ -10,18 +10,18 @@ import { CounterButtonsComponent } from '../counter-buttons/counter-buttons.comp
   styleUrl: './counter.component.scss',
 })
 export class CounterComponent implements OnInit {
-  counter: number = 0;
+  // counter: number = 0;
 
   constructor() {}
   ngOnInit(): void {}
 
-  onIncrement() {
-    this.counter++;
-  }
-  onDecrement() {
-    this.counter--;
-  }
-  onReset() {
-    this.counter = 0;
-  }
+  // onIncrement() {
+  //   this.counter++;
+  // }
+  // onDecrement() {
+  //   this.counter--;
+  // }
+  // onReset() {
+  //   this.counter = 0;
+  // }
 }
