@@ -9,6 +9,8 @@ import { RoutingAccessDenidedComponent } from './feature/routing/routing-access-
 import { authGuard } from './shared/guards/auth.guard';
 import { authChildGuard } from './shared/guards/auth-child.guard';
 import { authDeactivateGuard } from './shared/guards/auth-deactivate.guard';
+import { CounterComponent } from './ngrx/counter/counter/counter.component';
+import { NgrxComponent } from './ngrx/ngrx/ngrx.component';
 
 export const routes: Routes = [
   {
@@ -39,6 +41,17 @@ export const routes: Routes = [
           import(
             './feature/routing/routing-contact/routing-contact.component'
           ).then((m) => m.RoutingContactComponent),
+      },
+    ],
+  },
+  {
+    path: 'ngrx',
+    component: NgrxComponent,
+    children: [
+      { path: '', redirectTo: 'counter', pathMatch: 'full' },
+      {
+        path: 'counter',
+        component: CounterComponent,
       },
     ],
   },
