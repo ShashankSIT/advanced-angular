@@ -9,9 +9,6 @@ import { RoutingAccessDenidedComponent } from './feature/routing/routing-access-
 import { authGuard } from './shared/guards/auth.guard';
 import { authChildGuard } from './shared/guards/auth-child.guard';
 import { authDeactivateGuard } from './shared/guards/auth-deactivate.guard';
-import { AdvanceConceptComponent } from './feature/advanced/advance-concept/advance-concept.component';
-import { DomSanitizationComponent } from './feature/advanced/dom-sanitization/dom-sanitization.component';
-import { EventEmitterComponent } from './feature/advanced/event-emitter/event-emitter.component';
 
 export const routes: Routes = [
   {
@@ -42,21 +39,6 @@ export const routes: Routes = [
           import(
             './feature/routing/routing-contact/routing-contact.component'
           ).then((m) => m.RoutingContactComponent),
-      },
-    ],
-  },
-  {
-    path: 'advanced',
-    component: AdvanceConceptComponent,
-    children: [
-      { path: '', redirectTo: 'dom-sanitization', pathMatch: 'full' },
-      {
-        path: 'dom-sanitization',
-        component: DomSanitizationComponent,
-      },
-      {
-        path: 'event-emitter',
-        component: EventEmitterComponent,
       },
     ],
   },
