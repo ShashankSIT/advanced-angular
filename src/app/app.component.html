@@ -24,7 +24,37 @@
             ><i class="bi bi-house-fill"></i>Directive</a
           >
         </li>
-
+        <li class="nav-item dropdown rounded">
+          <a
+            class="nav-link mx-2 dropdown-toggle"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+            ><i class="bi bi-person-fill"></i>Advanced</a
+          >
+          <ul
+            class="dropdown-menu dropdown-menu-end bg-dark"
+            aria-labelledby="navbarDropdown"
+          >
+            <li>
+              <a
+                class="dropdown-item text-white"
+                routerLink="/advanced/dom-sanitization"
+                routerLinkActive="active"
+                >Dom Sanitization</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item text-white"
+                routerLink="/advanced/event-emitter"
+                routerLinkActive="active"
+                >Emit Event To Router Outlet</a
+              >
+            </li>
+          </ul>
+        </li>
         <li class="nav-item dropdown rounded">
           <a
             class="nav-link mx-2 dropdown-toggle"
