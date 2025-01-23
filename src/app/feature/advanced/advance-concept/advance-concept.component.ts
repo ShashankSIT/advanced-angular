@@ -10,7 +10,7 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AdvanceConceptComponent {
   subscribeToChildEmitter(componentRef: any) {
-    componentRef.eventToParent.subscribe((res: any) => {
+    componentRef.eventToParent?.subscribe((res: any) => {
       this.parentCalled();
     });
   }

@@ -9,6 +9,7 @@ body {
     background-size: contain;
     width: 48px;
     height: 48px;
+    user-select: none;
 }
 
 .navbar-nav .nav-item:hover {
@@ -22,6 +23,7 @@ body {
 
 .navbar {
     z-index: 2;
+    user-select: none;
 }
 
 .dropdown-item.active,
@@ -33,6 +35,11 @@ body {
 .dropdown-item:focus {
     background-color: #3b4249;
 }
-.component-body{
+
+.component-body {
     height: 100%;
+}
+
+.footer-content {
+    user-select: none;
 }

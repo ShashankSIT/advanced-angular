@@ -1,0 +1,15 @@
+<div class="container">
+  <div id="smudge-toggle" class="stretch-effect">
+    <input
+      type="checkbox"
+      id="checkbox"
+      [checked]="isOnline"
+      (change)="onCheckboxChange($event)"
+    />
+    <label for="checkbox">
+      <span> </span>
+      <div class="non-selectable">Eh? alright 😏</div>
+      <div class="non-selectable">Go Online</div>
+    </label>
+  </div>
+</div>

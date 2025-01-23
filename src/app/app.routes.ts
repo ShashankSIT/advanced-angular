@@ -11,6 +11,11 @@ import { authChildGuard } from './shared/guards/auth-child.guard';
 import { authDeactivateGuard } from './shared/guards/auth-deactivate.guard';
 import { CounterComponent } from './ngrx/counter/counter/counter.component';
 import { NgrxComponent } from './ngrx/ngrx/ngrx.component';
+import { AdvanceConceptComponent } from './feature/advanced/advance-concept/advance-concept.component';
+import { DomSanitizationComponent } from './feature/advanced/dom-sanitization/dom-sanitization.component';
+import { EventEmitterComponent } from './feature/advanced/event-emitter/event-emitter.component';
+import { ObservablesComponent } from './feature/advanced/observables/observables.component';
+import { PromisesComponent } from './feature/advanced/promises/promises.component';
 
 export const routes: Routes = [
   {
@@ -52,6 +57,29 @@ export const routes: Routes = [
       {
         path: 'counter',
         component: CounterComponent,
+      },
+    ],
+  },
+  {
+    path: 'advanced',
+    component: AdvanceConceptComponent,
+    children: [
+      { path: '', redirectTo: 'dom-sanitization', pathMatch: 'full' },
+      {
+        path: 'dom-sanitization',
+        component: DomSanitizationComponent,
+      },
+      {
+        path: 'event-emitter',
+        component: EventEmitterComponent,
+      },
+      {
+        path: 'observables',
+        component: ObservablesComponent,
+      },
+      {
+        path: 'promises',
+        component: PromisesComponent,
       },
     ],
   },
