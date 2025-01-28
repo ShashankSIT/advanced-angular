@@ -1,0 +1,31 @@
+<div class="d-flex justify-content-between align-items-center">
+  <label class="custom-checkbox w-25">
+    <input na type="checkbox" [(ngModel)]="useForkJoin" />
+    <span class="checkmark"></span> Use Forkjoin
+  </label>
+</div>
+<div class="row gap-4 my-4">
+  <!-- <label> <input type="checkbox" /> </label> -->
+  <div class="col-4 cust-dash">
+    <div *ngIf="value1 < 1; else showValue1" class="skeleton-loader"></div>
+    <ng-template #showValue1>{{ value1 }}</ng-template>
+  </div>
+  <div class="col-4 cust-dash">
+    <div *ngIf="value2 < 1; else showValue2" class="skeleton-loader"></div>
+    <ng-template #showValue2>{{ value2 }}</ng-template>
+  </div>
+  <div class="col-4 cust-dash">
+    <div *ngIf="value3 < 1; else showValue3" class="skeleton-loader"></div>
+    <ng-template #showValue3>{{ value3 }}</ng-template>
+  </div>
+</div>
+<div class="text-center mt-2">
+  <button
+    type="button"
+    class="btn btn-danger get-data"
+    [disabled]="value1 * value2 * value3 < 1"
+    (click)="useForkJoin ? getAllData() : getData()"
+  >
+    Get Data
+  </button>
+</div>

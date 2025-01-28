@@ -1,0 +1,117 @@
+::ng-deep .bg-custom {
+    background-color: #212529 !important;
+    color: white;
+}
+
+.cust-dash {
+    width: 250px;
+    height: 201px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    color: #212529;
+    font-size: 50px;
+    font-weight: 700;
+    padding: 0;
+}
+
+.skeleton-loader {
+    width: 100%;
+    height: 100%;
+    /* Adjust height to match your design */
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -200px 0;
+    }
+
+    100% {
+        background-position: 200px 0;
+    }
+}
+
+.skeleton-loader {
+    background: linear-gradient(66deg, #374350 25%, #212529 50%, #9d9d9d 500%);
+    background-size: 200% 100%;
+}
+
+.get-data {
+    font-size: 25px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 3px 5px 30px -10px rgba(204, 204, 204, 1);
+}
+
+/* From Uiverse.io by KhaledMatalkah */
+.custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px !important;
+    user-select: none;
+    font-size: 16px;
+    color: #f0f0f0;
+    transition: color 0.3s;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox .checkmark {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #b6b8ba;
+    border-radius: 4px;
+    background-color: #3f464e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+    transform-style: preserve-3d;
+}
+
+.custom-checkbox .checkmark::before {
+    content: "\2713";
+    font-size: 16px;
+    color: transparent;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.custom-checkbox input[type="checkbox"]:checked+.checkmark {
+    background-color: #dc3535;
+    border-color: #dc3545;
+    transform: scale(1.1) rotateZ(360deg) rotateY(360deg);
+}
+
+.custom-checkbox input[type="checkbox"]:checked+.checkmark::before {
+    color: #fff;
+}
+
+.custom-checkbox:hover {
+    color: #c2c2c2;
+}
+
+.custom-checkbox:hover .checkmark {
+    border-color: #666;
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+.custom-checkbox input[type="checkbox"]:focus+.checkmark {
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.2);
+    outline: none;
+}
+
+.custom-checkbox .checkmark,
+.custom-checkbox input[type="checkbox"]:checked+.checkmark {
+    transition: background-color 1.3s, border-color 1.3s, color 1.3s, transform 0.3s;
+}

@@ -16,6 +16,7 @@ import { DomSanitizationComponent } from './feature/advanced/dom-sanitization/do
 import { EventEmitterComponent } from './feature/advanced/event-emitter/event-emitter.component';
 import { ObservablesComponent } from './feature/advanced/observables/observables.component';
 import { PromisesComponent } from './feature/advanced/promises/promises.component';
+import { ForkJoinComponent } from './feature/advanced/fork-join/fork-join.component';
 
 export const routes: Routes = [
   {
@@ -80,6 +81,10 @@ export const routes: Routes = [
       {
         path: 'promises',
         component: PromisesComponent,
+      },
+      {
+        path: 'fork-join',
+        component: ForkJoinComponent,
       },
     ],
   },
