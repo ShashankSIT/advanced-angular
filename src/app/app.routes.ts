@@ -17,6 +17,7 @@ import { EventEmitterComponent } from './feature/advanced/event-emitter/event-em
 import { ObservablesComponent } from './feature/advanced/observables/observables.component';
 import { PromisesComponent } from './feature/advanced/promises/promises.component';
 import { ForkJoinComponent } from './feature/advanced/fork-join/fork-join.component';
+import { TrackByComponent } from './feature/advanced/track-by/track-by.component';
 
 export const routes: Routes = [
   {
@@ -85,6 +86,10 @@ export const routes: Routes = [
       {
         path: 'fork-join',
         component: ForkJoinComponent,
+      },
+      {
+        path: 'track-by',
+        component: TrackByComponent,
       },
     ],
   },
