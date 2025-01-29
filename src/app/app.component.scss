@@ -24,6 +24,7 @@ body {
 .navbar {
     z-index: 2;
     user-select: none;
+    border-bottom: 1px solid #b2ebf2;
 }
 
 .dropdown-item.active,
@@ -42,4 +43,5 @@ body {
 
 .footer-content {
     user-select: none;
+    border-top: 1px solid #b2ebf2;
 }
