@@ -20,10 +20,10 @@ import { ForkJoinComponent } from './feature/advanced/fork-join/fork-join.compon
 import { TrackByComponent } from './feature/advanced/track-by/track-by.component';
 
 export const routes: Routes = [
-  {
-    path: 'directive',
-    component: DirectiveExampleComponent,
-  },
+  // {
+  //   path: 'directive',
+  //   component: DirectiveExampleComponent,
+  // },
   {
     path: 'routing',
     component: RoutingExampleComponent,
@@ -90,6 +90,10 @@ export const routes: Routes = [
       {
         path: 'track-by',
         component: TrackByComponent,
+      },
+      {
+        path: 'directive',
+        component: DirectiveExampleComponent,
       },
     ],
   },

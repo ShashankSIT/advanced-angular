@@ -15,7 +15,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-md-auto gap-2">
-        <li class="nav-item rounded">
+        <!-- <li class="nav-item rounded">
           <a
             class="nav-link mx-2"
             routerLink="/directive"
@@ -23,7 +23,7 @@
             aria-current="page"
             ><i class="bi bi-house-fill"></i>Directive</a
           >
-        </li>
+        </li> -->
         <li class="nav-item dropdown rounded">
           <a
             class="nav-link mx-2 dropdown-toggle"
@@ -37,6 +37,14 @@
             class="dropdown-menu dropdown-menu-end bg-dark"
             aria-labelledby="navbarDropdown"
           >
+            <li>
+              <a
+                class="dropdown-item text-white"
+                routerLink="/advanced/directive"
+                routerLinkActive="active"
+                >Directive</a
+              >
+            </li>
             <li>
               <a
                 class="dropdown-item text-white"
@@ -56,6 +64,14 @@
             <li>
               <a
                 class="dropdown-item text-white"
+                routerLink="/advanced/fork-join"
+                routerLinkActive="active"
+                >Forkjoin</a
+              >
+            </li>
+            <li>
+              <a
+                class="dropdown-item text-white"
                 routerLink="/advanced/observables"
                 routerLinkActive="active"
                 >Observables</a
@@ -67,14 +83,6 @@
                 routerLink="/advanced/promises"
                 routerLinkActive="active"
                 >Promises</a
-              >
-            </li>
-            <li>
-              <a
-                class="dropdown-item text-white"
-                routerLink="/advanced/fork-join"
-                routerLinkActive="active"
-                >Forkjoin</a
               >
             </li>
             <li>
